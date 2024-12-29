@@ -1,0 +1,10 @@
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

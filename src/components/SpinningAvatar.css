@@ -1,0 +1,31 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.spinning-avatar {
+  animation: spin 3s linear infinite;
+  max-width: 100%;
+  background-image: url('/src/assets/holly2.png');
+  background-size: cover; /* or contain, or specific dimensions */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-position: center;
+  width: var(--avatar-size, 50px); /* Default size if CSS variable isn't set */
+  height: var(--avatar-size, 50px); /* Default size if CSS variable isn't set */
+  object-fit: cover;
+}
